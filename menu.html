@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HaryaYummy - Daftar Menu & Pemesanan</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        background-color: #f8f9fa;
+        color: #333;
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+      }
+
+      /* Style Navigasi Header */
+      .nav-menu {
+        background-color: #343a40;
+        padding: 12px;
+        border-radius: 8px;
+        text-align: center;
+      }
+
+      .nav-menu a {
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: bold;
+        margin: 0 10px;
+      }
+
+      .nav-menu a:hover {
+        color: #ffc107;
+      }
+
+      /* Style Heading */
+      h1 {
+        color: #d9534f;
+        text-align: center;
+        margin-top: 25px;
+      }
+
+      h2 {
+        color: #2c3e50;
+        border-bottom: 2px solid #d9534f;
+        padding-bottom: 5px;
+        margin-top: 30px;
+      }
+
+      .card-box {
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        margin-top: 15px;
+      }
+
+      /* Style Tabel Menu */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid #dee2e6;
+      }
+
+      th {
+        background-color: #d9534f;
+        color: #ffffff;
+        padding: 12px;
+        text-align: center;
+      }
+
+      td {
+        padding: 10px 12px;
+        vertical-align: middle;
+      }
+
+      .category-header {
+        background-color: #f1f3f5;
+        font-weight: bold;
+        color: #2c3e50;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      .text-right {
+        text-align: right;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f8f9fa;
+      }
+
+      /* Style Ordered List */
+      ol {
+        margin-left: 20px;
+      }
+
+      li {
+        margin-bottom: 8px;
+        font-size: 1rem;
+      }
+
+      /* Style Footer */
+      footer {
+        text-align: center;
+        margin-top: 40px;
+        padding-top: 15px;
+        border-top: 1px solid #ccc;
+        color: #6c757d;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVIGASI HYPERLINK -->
+    <div class="nav-menu">
+      <a href="index.html">Home</a> | <a href="menu.html">Menu</a> | <a href="profil.html">Profil</a> | <a href="about.html">About</a> | <a href="gallery.html">Gallery</a> |
+      <a href="kontak.html">Kontak</a>
+    </div>
+
+    <h1>Daftar Menu & Cara Pemesanan</h1>
+
+    <!-- TABEL DAFTAR MENU -->
+    <h2>Daftar Menu Restoran</h2>
+    <p>Berikut adalah tabel daftar makanan, minuman, dan dessert beserta harganya di Restoran HaryaYummy:</p>
+
+    <div class="card-box">
+      <table>
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Kategori</th>
+            <th>Nama Menu</th>
+            <th>Harga (Rupiah)</th>
+            <th>Harga (USD)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- KATEGORI MAKANAN UTAMA -->
+          <tr>
+            <td class="text-center">1</td>
+            <td rowspan="4" class="category-header text-center">Makanan Utama</td>
+            <td>Nasi Goreng Spesial</td>
+            <td class="text-right">Rp 25.000</td>
+            <td class="text-center">$1.60</td>
+          </tr>
+          <tr>
+            <td class="text-center">2</td>
+            <td>Ayam Bakar Taliwang</td>
+            <td class="text-right">Rp 30.000</td>
+            <td class="text-center">$1.90</td>
+          </tr>
+          <tr>
+            <td class="text-center">3</td>
+            <td>Rendang Daging Sapi</td>
+            <td class="text-right">Rp 35.000</td>
+            <td class="text-center">$2.20</td>
+          </tr>
+          <tr>
+            <td class="text-center">4</td>
+            <td>Soto Ayam Lamongan</td>
+            <td class="text-right">Rp 22.000</td>
+            <td class="text-center">$1.40</td>
+          </tr>
+
+          <!-- KATEGORI MINUMAN -->
+          <tr>
+            <td class="text-center">5</td>
+            <td rowspan="3" class="category-header text-center">Minuman</td>
+            <td>Es Teh Manis Jumbo</td>
+            <td class="text-right">Rp 6.000</td>
+            <td class="text-center">$0.40</td>
+          </tr>
+          <tr>
+            <td class="text-center">6</td>
+            <td>Es Jeruk Peras</td>
+            <td class="text-right">Rp 8.000</td>
+            <td class="text-center">$0.50</td>
+          </tr>
+          <tr>
+            <td class="text-center">7</td>
+            <td>Jus Alpukat</td>
+            <td class="text-right">Rp 15.000</td>
+            <td class="text-center">$1.00</td>
+          </tr>
+
+          <!-- KATEGORI DESSERT -->
+          <tr>
+            <td class="text-center">8</td>
+            <td rowspan="3" class="category-header text-center">Dessert</td>
+            <td>Es Teler Spesial</td>
+            <td class="text-right">Rp 18.000</td>
+            <td class="text-center">$1.15</td>
+          </tr>
+          <tr>
+            <td class="text-center">9</td>
+            <td>Pancake Durian</td>
+            <td class="text-right">Rp 20.000</td>
+            <td class="text-center">$1.30</td>
+          </tr>
+          <tr>
+            <td class="text-center">10</td>
+            <td>Pisang Goreng Keju Cokelat</td>
+            <td class="text-right">Rp 12.000</td>
+            <td class="text-center">$0.80</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ORDERED LIST PEMESANAN -->
+    <h2>Langkah-Langkah Pemesanan Makanan</h2>
+    <p>Untuk memesan makanan secara langsung maupun online, silakan ikuti 5 langkah mudah berikut:</p>
+
+    <div class="card-box">
+      <ol>
+        <li><strong>Pilih Menu:</strong> Buka tabel daftar menu di atas dan tentukan hidangan yang ingin Anda pesan.</li>
+        <li><strong>Sampaikan Pesanan:</strong> Hubungi pelayan restoran atau kirim pesan melalui kontak resmi kami.</li>
+        <li><strong>Konfirmasi Pesanan & Rincian Harga:</strong> Periksa kembali daftar pesanan beserta total biaya yang disampaikan.</li>
+        <li><strong>Lakukan Pembayaran:</strong> Lakukan pembayaran melalui tunai, transfer bank, atau e-wallet.</li>
+        <li><strong>Sajian Diantar / Diambil:</strong> Pesanan Anda akan segera diproses dan siap dinikmati.</li>
+      </ol>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 Restoran HaryaYummy. Hak Cipta Dilindungi Undang-Undang.</p>
+    </footer>
+  </body>
+</html>
